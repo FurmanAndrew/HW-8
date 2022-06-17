@@ -36,6 +36,9 @@
     @include version(mobile-only) {
       margin-bottom: 60px;
     }
+    @include version(tablet-only) {
+      margin-bottom: 60px;
+    }
     @include version(tablet) {
       margin-right: 70px;
     }

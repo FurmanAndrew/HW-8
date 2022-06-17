@@ -36,9 +36,9 @@
   & > .team__item {
     background-color: var(--footer-text);
   }
-  //   @include version(tablet-only) {
-  //       flex-basis: calc((100% - 2*15)/2);
-  //   }
+  @include version(tablet-only) {
+    flex-basis: calc((100% - 2 * 15) / 2);
+  }
   @include version(desktop) {
     display: flex;
     & > .team__item {
