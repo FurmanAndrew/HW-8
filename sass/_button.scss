@@ -20,6 +20,7 @@
   }
   &--form {
     align-self: center;
+    margin: 0 auto;
     letter-spacing: 0.06em;
     transition: background-color var(--animation-webstudio),
       box-shadow var(--animation-webstudio);
@@ -66,8 +67,8 @@
   color: #000000;
   background-color: #ffffff;
   transition: background-color var(--animation-webstudio);
-  .modal-buton:hover,
-  .modal-buton:focus {
+  .modal-button:hover,
+  .modal-button:focus {
     background-color: var(--secondary-link-color);
     border: none;
   }
