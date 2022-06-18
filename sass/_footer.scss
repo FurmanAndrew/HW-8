@@ -45,6 +45,11 @@
   }
 }
 .footer-mail {
+  @include version(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @include version(desktop) {
     margin: 0 auto;
   }
@@ -60,6 +65,9 @@
 .footer-mail__mail-form {
   height: 50px;
   margin-top: 20px;
+  @include version(mobile-only) {
+    margin-bottom: 20px;
+  }
   @include version(tablet) {
     display: flex;
     justify-content: center;

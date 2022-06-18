@@ -69,6 +69,59 @@
         <div class="container">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button class="button" type="button" data-modal-open>Заказать услугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal-button" type="button" data-modal-close>
+                        <svg class="modal__icon">
+                            <use href="photo/svg-icon/symbol-defs.svg#icon-close-black-modal"></use>
+                        </svg>
+                    </button>
+                    <strong class="modal__title">Оставьте свои данные, мы вам перезвоним</strong>
+                    <form class="modal-form">
+                        <span class="modal-form__text">Имя</span>
+                        <label class="modal-form__label">
+                            <input class="modal-form__input" name="name" value="" type="text" placeholder=" ">
+                            <span class="modal-form__image">
+                                <svg class="modal-form__icon" width=20px height=20px>
+                                    <use href="photo/svg-icon/symbol-defs.svg#icon-person-black"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <span class="modal-form__text">Телефон</span>
+                        <label class="modal-form__label">
+                            <input class="modal-form__input" name="telephon" value="" type="number" placeholder=" ">
+                            <span class="modal-form__image">
+                                <svg class="modal-form__icon" width=20px height=20px>
+                                    <use href="photo/svg-icon/symbol-defs.svg#icon-phone-black"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <span class="modal-form__text">Почта</span>
+                        <label class="modal-form__label">
+                            <input class="modal-form__input" name="email" value="" type="email" placeholder=" ">
+                            <span class="modal-form__image">
+                                <svg class="modal-form__icon" width=20px height=20px>
+                                    <use href="photo/svg-icon/symbol-defs.svg#icon-email-black"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="modal-form__com-label" for="comment">Комментарий</label>
+                        <textarea class="modal-form__commetns" name="comment" id="comment" rows="5"
+                            placeholder="Введите текст"></textarea>
+                        <label class="modal-form__custom-label">
+                            <input class="modal-form__policy" name="policy" value="policy" type="checkbox">
+                            <span class="modal-form__custom-checkbox">
+                                <svg class="modal-form__custom-icon" width=16px height=15px>
+                                    <use href="photo/svg-icon/symbol-defs.svg#icon-icon-check"></use>
+                                </svg>
+                            </span>
+                            <span class="modal-form__contract">Соглашаюсь с рассылкой и принимаю <span class="contract-link">Условия
+                                    договора</span></span>
+                        </label>
+                        <button class="button buton--form" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section characteristics">
@@ -129,7 +182,10 @@
                     <div class="work__container">
                         <img class="work__img" srcset="
                         photo/work/work-1-370.jpg 370w,
-                        photo/work/work-1-740.jpg 740w" src="photo/work/work-1-370.jpg 370w" alt="работа на макбуке" width="370" height="294">
+                        photo/work/work-1-740.jpg 740w" 
+                        src="photo/work/work-1-370.jpg 370w" 
+                        alt="работа на макбуке" width="370" height="294"
+                        loading="lazy">
                         <p class="work__text">Десктопные приложения</p>
                     </div>
                 </li>
@@ -137,14 +193,23 @@
                     <div class="work__container">
                         <img class="work__img" srcset="
                         photo/work/work-2-370.jpg 370w,
-                        photo/work/work-2-740.jpg 740w" src="photo/work/work-2-370.jpg 370w" alt="Работа с вариантами разметок на телефоне"
-                            width="370" height="294">
+                        photo/work/work-2-740.jpg 740w" 
+                        src="photo/work/work-2-370.jpg 370w" 
+                        alt="Работа с вариантами разметок на телефоне"
+                        width="370" height="294"
+                        loading="lazy">
                         <p class="work__text">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="work__item">
                     <div class="work__container">
-                        <img class="work__img" src="photo/box3.jpg" alt="выбор спектра цветов" width="370" height="294">
+                        <img class="work__img" srcset="
+                        photo/work/work-3-370.jpg 370w,
+                        photo/work/work-3-740.jpg 740w" 
+                        src="photo/work/work-3-370.jpg 370w" 
+                        alt="выбор спектра цветов" 
+                        width="370" height="294"
+                        loading="lazy">
                         <p class="work__text">Дизайнерские решения</p>
                     </div>
                 </li>
@@ -163,7 +228,10 @@
                     ../photo/team/team-1-540.jpg 540w,
                     ../photo/team/team-1-708.jpg 708w,
                     ../photo/team/team-1-900.jpg 900w,
-                    " sizes="(min-width: 1200) 270px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw" src="photo/team/team-1-450.jpg" alt="продукт-дизайнер Вебстудии">
+                    " sizes="(min-width: 1200) 270px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw" 
+                    src="photo/team/team-1-450.jpg" 
+                    alt="продукт-дизайнер Вебстудии"
+                    loading="lazy">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p class="team__position" lang="en">Product Designer</p>
                     <div class="social">
@@ -192,7 +260,10 @@
                     ../photo/team/team-2-540.jpg 540w,
                     ../photo/team/team-2-708.jpg 708w,
                     ../photo/team/team-2-900.jpg 900w,
-                    " sizes="(min-width: 1200) 450px, (min-width: 768) 354px, (max-width: 767) 270px, 100vw" src="photo/team/team-2-450.jpg" alt="Фронтенд разработчик Вебстудии">
+                    " sizes="(min-width: 1200) 450px, (min-width: 768) 354px, (max-width: 767) 270px, 100vw" 
+                    src="photo/team/team-2-450.jpg" 
+                    alt="Фронтенд разработчик Вебстудии"
+                    loading="lazy">
                     <h3 class="team__name">Ольга Репина</h3>
                     <p class="team__position" lang="en">Frontend Developer</p>
                     <div class="social">
@@ -220,7 +291,10 @@
                     ../photo/team/team-3-540.jpg 540w,
                     ../photo/team/team-3-708.jpg 708w,
                     ../photo/team/team-3-900.jpg 900w,
-                    " sizes="(min-width: 1200) 450px, (min-width: 768) 354px, (max-width: 767) 270px, 100vw" src="photo/team/team-3-450.jpg" alt="маркетолог Вебстудии">
+                    " sizes="(min-width: 1200) 450px, (min-width: 768) 354px, (max-width: 767) 270px, 100vw" 
+                    src="photo/team/team-3-450.jpg" 
+                    alt="маркетолог Вебстудии"
+                    loading="lazy">
                     <h3 class="team__name">Николай Тарасов</h3>
                     <p class="team__position" lang="en">Marketing</p>
                     <div class="social">
@@ -248,7 +322,10 @@
                     ../photo/team/team-4-540.jpg 540w,
                     ../photo/team/team-4-708.jpg 708w,
                     ../photo/team/team-4-900.jpg 900w,
-                    " sizes="(min-width: 1200) 270px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw" src="photo/team/team-4-450.jpg" alt="УИ-дизайнер Вебстудии">
+                    " sizes="(min-width: 1200) 270px, (min-width: 768) 354px, (max-width: 767) 450px, 100vw" 
+                    src="photo/team/team-4-450.jpg" 
+                    alt="УИ-дизайнер Вебстудии"
+                    loading="lazy">
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <p class="team__position" lang="en">UI Designer</p>
                     <div class="social">
@@ -367,15 +444,21 @@
                 <b class="footer-mail__mail-title">Подпишитесь на рассылку</b>
                 <form class="footer-mail__mail-form">
                     <input class="footer-mail__mail-input" type="email" name="email" value="" placeholder="E-mail">
-                    <button class="button button--footer">Подписаться
+                    <button class="button button--footer button--tab">Подписаться
                         <svg class="footer-mail__icon-send">
                             <use href="photo/svg-icon/symbol-defs.svg#icon-icon-send"></use>
                         </svg>
                     </button>
                 </form>
+                <button class="button button--footer button--mob">Подписаться
+                    <svg class="footer-mail__icon-send">
+                        <use href="photo/svg-icon/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </footer>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

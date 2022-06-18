@@ -16,6 +16,40 @@
 </head>
 <body class="body">
     <header class="header">
+        <div class="mobile-header">
+            <a class="logo logo--backdown" href="#" lang="en">Web<span class="logo__studio-header">Studio</span></a>
+            <button class="mobile-header__button is-open" type="button" aria-expanded="false" aria-controls="mobile-container"
+                data-menu-button>
+                <svg class="" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="mobile-header__icon-menu" href="photo/svg-icon/symbol-defs.svg#icon-menu_header"></use>
+                    <use class="mobile-header__icon-cross" href="photo/svg-icon/symbol-defs.svg#icon-close-black-modal"></use>
+                </svg>
+            </button>
+            <div class="mobile-container is-open" id="mobile-container" data-menu>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav__list list-point">
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-nav__item nav-current"><a class="mobile-nav__link current-page" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="mobile-nav__contacts list-point">
+                    <li class="mobile-nav__contacts-item"><a class="mobile-nav__contacts-link mobile-nav__contacts-link--color"
+                            href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer nofollow" lang="en">
+                            info@devstudio.com</a></li>
+                    <li class="mobile-nav__contacts-item"><a class="mobile-nav__contacts-link" href="tel:+380961111111"
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            +38 096 111 11 11</a></li>
+                </ul>
+                <ul class="mobile-nav__social list-point">
+                    <li class="mobile-nav__social-item"><a class="mobile-nav__social-link" href="#">Instagram</a></li>
+                    <li class="mobile-nav__social-item"><a class="mobile-nav__social-link" href="#">Twitter</a></li>
+                    <li class="mobile-nav__social-item"><a class="mobile-nav__social-link" href="#">Facebook</a></li>
+                    <li class="mobile-nav__social-item"><a class="mobile-nav__social-link" href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="container">
             <a class="logo logo--backdown" href="#" lang="en">Web<span class="logo__studio-header">Studio</span></a>
             <nav class="navigation">
@@ -62,7 +96,10 @@
                                 photo/photo-projects/tab-vers/img-1-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-1-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-1-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-1-450.jpg" alt="Главная страница Технокряка">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-1-450.jpg" 
+                                alt="Главная страница Технокряка"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -84,7 +121,10 @@
                                 photo/photo-projects/tab-vers/img-2-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-2-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-2-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-2-450.jpg" alt="Постер встречи двух команд">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-2-450.jpg" 
+                                alt="Постер встречи двух команд"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -106,7 +146,10 @@
                                 photo/photo-projects/tab-vers/img-3-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-3-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-3-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-3-450.jpg" alt="Логотип ресторана">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-3-450.jpg" 
+                                alt="Логотип ресторана"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -128,7 +171,10 @@
                                 photo/photo-projects/tab-vers/img-4-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-4-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-4-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-4-450.jpg" alt="Наушники">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-4-450.jpg" 
+                                alt="Наушники"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -150,7 +196,10 @@
                                 photo/photo-projects/tab-vers/img-5-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-5-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-5-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-5-450.jpg" alt="Два бокса">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-5-450.jpg" 
+                                alt="Два бокса"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -172,7 +221,10 @@
                                 photo/photo-projects/tab-vers/img-6-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-6-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-6-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-6-450.jpg" alt="Главная страница веб-сайта">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-6-450.jpg" 
+                                alt="Главная страница веб-сайта"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -194,7 +246,10 @@
                                 photo/photo-projects/tab-vers/img-7-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-7-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-7-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-7-450.jpg" alt="Открытая книга">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-7-450.jpg" 
+                                alt="Открытая книга"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -216,7 +271,10 @@
                                 photo/photo-projects/tab-vers/img-8-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-8-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-8-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-8-450.jpg" alt="Ценник украшения">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-8-450.jpg" 
+                                alt="Ценник украшения"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -238,7 +296,10 @@
                                 photo/photo-projects/tab-vers/img-9-708.jpg 708w,
                                 photo/photo-projects/desk-vers/img-9-740.jpg 740w,
                                 photo/photo-projects/mob-vers/img-9-900.jpg 900w,"
-                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" src="photo/photo-projects/mob-vers/img-9-450.jpg" alt="Работа за компютером">
+                                sizes="(min-width: 1200) 370px, (min-width: 768) 304px, (max-width: 767) 450px, 100vw" 
+                                src="photo/photo-projects/mob-vers/img-9-450.jpg" 
+                                alt="Работа за компютером"
+                                loading="lazy">
                                 <p class="project-list__animation">Ресурс предлагает комплексные предложения с разным уровнем
                                     функционала и сервисов. Все это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.
@@ -256,63 +317,72 @@
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            <div class="part-one">
-                <a class="logo logo--desine" href="#" lang="en">
-                    Web<span class="logo__studio-footer">Studio</span>
-                </a>
-                <address class="footer-address">
-                    <ul class="info-list info-list--margin list-point">
-                        <li class="info-list__item info-list__item--design">
-                            г. Киев, пр-т Леси Украинки, 26
-                        </li>
-                        <li class="info-list__item info-list__item--design">
-                            <a class="info-list__link info-list__link--margin-color" href="mailto:info@devstudio.com"
-                                target="_blank" rel="noopener noreferrer nofollow" lang="en">
-                                info@example.com
-                            </a>
-                        </li>
-                        <li class="footer-item info-list__item--design">
-                            <a class="info-list__link info-list__link--margin-color" href="tel:+380961111111"
-                                target="_blank" rel="noopener noreferrer nofollow">
-                                +38 099 111 11 11
-                            </a>
-                        </li>
+            <div class="footer-tablet">
+                <div class="part-one">
+                    <a class="logo logo--desine" href="#" lang="en">
+                        Web<span class="logo__studio-footer">Studio</span>
+                    </a>
+                    <address class="footer-address">
+                        <ul class="info-list info-list--margin list-point">
+                            <li class="info-list__item info-list__item--design">
+                                г. Киев, пр-т Леси Украинки, 26
+                            </li>
+                            <li class="info-list__item info-list__item--design">
+                                <a class="info-list__link info-list__link--margin-color" href="mailto:info@devstudio.com"
+                                    target="_blank" rel="noopener noreferrer nofollow" lang="en">
+                                    info@example.com
+                                </a>
+                            </li>
+                            <li class="footer-item info-list__item--design">
+                                <a class="info-list__link info-list__link--margin-color" href="tel:+380961111111" target="_blank"
+                                    rel="noopener noreferrer nofollow">
+                                    +38 099 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social social--one">
+                    <p class="social__text">Присоиденяйтесь</p>
+                    <ul class="social__list list-point">
+                        <li class="social__item"><a class="social__link social__link--desine" href="#"><svg
+                                    class="social__icon social__icon--display">
+                                    <use href="./photo/svg-icon/symbol-defs.svg#icon-instagram"></use>
+                                </svg></a></li>
+                        <li class="social__item"><a class="social__link social__link--desine" href="#"><svg
+                                    class="social__icon social__icon--display">
+                                    <use href="./photo/svg-icon/symbol-defs.svg#icon-twitter"></use>
+                                </svg></a></li>
+                        <li class="social__item"><a class="social__link social__link--desine" href="#"><svg
+                                    class="social__icon social__icon--display">
+                                    <use href="./photo/svg-icon/symbol-defs.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li class="social__item"><a class="social__link social__link--desine" href="#"><svg
+                                    class="social__icon social__icon--display">
+                                    <use href="./photo/svg-icon/symbol-defs.svg#icon-linkedin"></use>
+                                </svg></a></li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="social social--one">
-                <p class="social__text">Присоиденяйтесь</p>
-                <ul class="social__list list-point">
-                    <li class="social__item"><a class="social__link social__link--desine" href="#"><svg
-                                class="social__icon social__icon--display">
-                                <use href="./photo/svg-icon/symbol-defs.svg#icon-instagram"></use>
-                            </svg></a></li>
-                    <li class="social__item"><a class="social__link social__link--desine" href="#"><svg
-                                class="social__icon social__icon--display">
-                                <use href="./photo/svg-icon/symbol-defs.svg#icon-twitter"></use>
-                            </svg></a></li>
-                    <li class="social__item"><a class="social__link social__link--desine" href="#"><svg
-                                class="social__icon social__icon--display">
-                                <use href="./photo/svg-icon/symbol-defs.svg#icon-facebook"></use>
-                            </svg></a></li>
-                    <li class="social__item"><a class="social__link social__link--desine" href="#"><svg
-                                class="social__icon social__icon--display">
-                                <use href="./photo/svg-icon/symbol-defs.svg#icon-linkedin"></use>
-                            </svg></a></li>
-                </ul>
-            </div>
-            <div class="footer-mail">
+            <div class="footer-mail ">
                 <b class="footer-mail__mail-title">Подпишитесь на рассылку</b>
                 <form class="footer-mail__mail-form">
                     <input class="footer-mail__mail-input" type="email" name="email" value="" placeholder="E-mail">
-                    <button class="mail-button">Подписаться
+                    <button class="button button--footer button--tab">Подписаться
                         <svg class="footer-mail__icon-send">
                             <use href="photo/svg-icon/symbol-defs.svg#icon-icon-send"></use>
                         </svg>
                     </button>
                 </form>
+                <button class="button button--footer button--mob">Подписаться
+                    <svg class="footer-mail__icon-send">
+                        <use href="photo/svg-icon/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
             </div>
+            
         </div>
     </footer>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
