@@ -623,10 +623,15 @@ body {
   transition: background-color var(--animation-webstudio);
 }
 
-.modal-button .modal-button:hover,
-.modal-button .modal-button:focus {
-  background-color: var(--secondary-link-color);
+.modal-button:hover, .modal-button:focus {
+  color: var(--secondary-link-color);
   border: none;
+}
+
+.modal__icon {
+  fill: currentColor;
+  width: 18px;
+  height: 18px;
 }
 
 .backdrop {
@@ -638,6 +643,8 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.1);
   visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: visibility var(--animation-webstudio);
   transition: visibility var(--animation-webstudio);
 }
@@ -664,7 +671,7 @@ body {
   visibility: hidden;
 }
 
-.backdrop.is-hidden modal {
+.backdrop.is-hidden.modal {
   opacity: 0.8;
   -webkit-transform: translate(-50%, -50%) scale(0.8);
           transform: translate(-50%, -50%) scale(0.8);
@@ -1715,8 +1722,8 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .project-list__item {
-    -ms-flex-preferred-size: calc((100%-2 * 15px) / 2);
-        flex-basis: calc((100%-2 * 15px) / 2);
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
   }
 }
 

@@ -67,9 +67,14 @@
   color: #000000;
   background-color: #ffffff;
   transition: background-color var(--animation-webstudio);
-  .modal-button:hover,
-  .modal-button:focus {
-    background-color: var(--secondary-link-color);
+  &:hover,
+  &:focus {
+    color: var(--secondary-link-color);
     border: none;
   }
+}
+.modal__icon {
+  fill: currentColor;
+  width: 18px;
+  height: 18px;
 }

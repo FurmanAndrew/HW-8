@@ -7,6 +7,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.1);
   visibility: visible;
+  transform: scale(1);
   transition: visibility var(--animation-webstudio);
 }
 .modal {
@@ -25,7 +26,7 @@
 .backdrop.is-hidden {
   pointer-events: none;
   visibility: hidden;
-  & modal {
+  &.modal {
     opacity: 0.8;
     transform: translate(-50%, -50%) scale(0.8);
   }
