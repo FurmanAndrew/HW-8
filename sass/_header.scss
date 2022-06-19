@@ -27,6 +27,7 @@
     margin: 0;
     padding: 0 20px;
     border: none;
+    color: #000;
     background-color: transparent;
   }
   &__button {
@@ -34,8 +35,15 @@
     right: -5px;
     z-index: 2;
   }
+  &__button:hover {
+    color: var(--secondary-link-color);
+  }
+  &__icon-cross {
+    fill: currentColor;
+  }
   &__icon-menu {
     display: none;
+    fill: currentColor;
   }
   &__button.is-open &__icon-cross {
     display: none;

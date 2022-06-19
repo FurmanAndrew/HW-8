@@ -38,9 +38,8 @@ body {
   margin: 0;
 }
 
-@media screen {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
     width: 100%;
   }
 }
@@ -131,6 +130,7 @@ body {
   margin: 0;
   padding: 0 20px;
   border: none;
+  color: #000;
   background-color: transparent;
 }
 
@@ -140,8 +140,17 @@ body {
   z-index: 2;
 }
 
+.mobile-header__button:hover {
+  color: var(--secondary-link-color);
+}
+
+.mobile-header__icon-cross {
+  fill: currentColor;
+}
+
 .mobile-header__icon-menu {
   display: none;
+  fill: currentColor;
 }
 
 .mobile-header__button.is-open .mobile-header__icon-cross {
