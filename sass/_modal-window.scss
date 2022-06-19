@@ -5,6 +5,7 @@
   height: 100%;
   top: 0;
   left: 0;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.1);
   visibility: visible;
   transform: scale(1);
@@ -16,14 +17,20 @@
   left: 50%;
   top: 50%;
   padding: 40px;
-  width: 548px;
-  overflow-y: scroll;
+  width: 450px;
   border-radius: 4px;
   background-color: var(--footer-text);
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
     scale var(--animation-webstudio), opacity var(--animation-webstudio);
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+  @include version(desktop) {
+    position: relative;
+    padding: 40px;
+  }
 }
 .backdrop.is-hidden {
   pointer-events: none;
@@ -45,11 +52,20 @@
   padding: 0px;
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-title);
+  @include version(tablet-only) {
+    font-size: 18px;
+  }
+  @include version(desktop) {
+    font-size: 20px;
+  }
+  @include version(tablet-only) {
+    line-height: 1.15;
+  }
 }
 .modal-form {
   display: flex;

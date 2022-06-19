@@ -5,6 +5,7 @@
     height: 80px;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     color: var(--footer-text);
     @include version(mobile-only) {
       display: none;
