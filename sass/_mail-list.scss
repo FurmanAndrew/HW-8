@@ -35,13 +35,16 @@
     .info-list > &:last-child {
       margin-bottom: 0px;
     }
-    &--design {
-      margin: 0px;
-      padding: 0px;
-      color: var(--footer-text);
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
+  }
+  &--design {
+    margin: 0 0 8px;
+    padding: 0px;
+    color: var(--footer-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    &:last-of-type {
+      margin-bottom: 0px;
     }
   }
 }

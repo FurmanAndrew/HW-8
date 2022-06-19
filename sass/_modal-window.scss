@@ -8,7 +8,8 @@
   background-color: rgba(0, 0, 0, 0.1);
   visibility: visible;
   transform: scale(1);
-  transition: visibility var(--animation-webstudio);
+  transition: transform var(--animation-webstudio),
+    visibility var(--animation-webstudio);
 }
 .modal {
   position: absolute;
@@ -16,6 +17,7 @@
   top: 50%;
   padding: 40px;
   width: 548px;
+  overflow-y: scroll;
   border-radius: 4px;
   background-color: var(--footer-text);
   opacity: 1;
@@ -26,6 +28,7 @@
 .backdrop.is-hidden {
   pointer-events: none;
   visibility: hidden;
+  transform: scale(0.8);
   &.modal {
     opacity: 0.8;
     transform: translate(-50%, -50%) scale(0.8);
