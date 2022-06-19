@@ -3,6 +3,10 @@
   padding-right: 15px;
   padding-left: 15px;
   margin: 0;
+  @media screen {
+    max-width: 480px;
+    width: 100%;
+  }
   @include version(mobile) {
     width: 480px;
   }
