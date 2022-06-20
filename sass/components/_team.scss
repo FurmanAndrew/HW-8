@@ -85,6 +85,8 @@
 }
 .social__list {
   display: flex;
+  justify-content: space-between;
+  width: 206px;
   margin: 0;
   padding: 0;
   &--center {
@@ -103,10 +105,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10px;
-  .social__list > &:last-child {
-    margin-right: 0px;
-  }
 }
 .social__link {
   display: flex;

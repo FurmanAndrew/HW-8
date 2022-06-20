@@ -1,8 +1,6 @@
 .section {
-  @include version(mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
   @include version(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;

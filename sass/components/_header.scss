@@ -1,5 +1,4 @@
 .header {
-  border-bottom: 1px solid #ececec;
   & > .container {
     display: flex;
     justify-content: space-between;
@@ -35,6 +34,9 @@
     position: fixed;
     right: -5px;
     z-index: 2;
+  }
+  &__button.is-open {
+    position: absolute;
   }
   &__button:hover {
     color: var(--secondary-link-color);

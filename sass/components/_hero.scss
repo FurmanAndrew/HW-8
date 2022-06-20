@@ -59,12 +59,6 @@
   padding-bottom: 200px;
   & > .container {
     margin: 0 auto;
-    @include version(tablet-only) {
-      width: 450px;
-    }
-    @include version(desktop) {
-      width: 720px;
-    }
   }
   &__title {
     margin: 0px;
