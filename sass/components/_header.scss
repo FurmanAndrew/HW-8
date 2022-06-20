@@ -2,7 +2,6 @@
   border-bottom: 1px solid #ececec;
   & > .container {
     display: flex;
-    height: 80px;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -30,9 +29,10 @@
     border: none;
     color: #000;
     background-color: transparent;
+    transition: color var(--animation-webstudio);
   }
   &__button {
-    position: absolute;
+    position: fixed;
     right: -5px;
     z-index: 2;
   }

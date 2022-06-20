@@ -32,10 +32,9 @@ body {
 }
 
 .container {
-  display: inherit;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 320px) {
@@ -84,7 +83,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -133,10 +131,12 @@ body {
   border: none;
   color: #000;
   background-color: transparent;
+  -webkit-transition: color var(--animation-webstudio);
+  transition: color var(--animation-webstudio);
 }
 
 .mobile-header__button {
-  position: absolute;
+  position: fixed;
   right: -5px;
   z-index: 2;
 }
@@ -1465,6 +1465,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   height: 92px;
   color: #afb1b8;
   border: 1px solid transparent;
