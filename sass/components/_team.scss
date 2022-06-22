@@ -75,7 +75,6 @@
   &--one {
     flex-direction: column;
     @include version(mobile-only) {
-      margin-bottom: 60px;
       margin-right: auto;
     }
     @include version(desktop) {
@@ -97,7 +96,7 @@
     height: 44px;
   }
   @include version(mobile-only) {
-    justify-content: center;
+    align-self: center;
   }
 }
 

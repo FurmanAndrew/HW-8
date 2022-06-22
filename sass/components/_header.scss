@@ -4,12 +4,16 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    border-bottom: 1px solid #ececec;
     color: var(--footer-text);
     @include version(mobile-only) {
       display: none;
     }
     @include version(tablet-only) {
-      width: 100vw;
+      width: 768px;
+    }
+    @include version(desktop) {
+      width: 1200px;
     }
   }
 }
@@ -18,6 +22,7 @@
   align-items: center;
   min-height: 80px;
   color: var(--footer-text);
+  border-bottom: 1px solid #ececec;
   @include version(tablet) {
     display: none;
   }
@@ -33,12 +38,13 @@
   &__button {
     position: fixed;
     right: -5px;
-    z-index: 2;
+    z-index: 5;
   }
   &__button.is-open {
     position: absolute;
   }
-  &__button:hover {
+  &__button:hover,
+  &__button:focus {
     color: var(--secondary-link-color);
   }
   &__icon-cross {
@@ -65,13 +71,16 @@
   display: flex;
   flex-direction: column;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   padding-top: 48px;
+  transform: translateY(0%);
+  transition: transform var(--animation-webstudio);
   &.is-open {
-    display: none;
+    transform: translateY(-100%);
   }
 
   @include version(tablet) {
@@ -89,6 +98,11 @@
     line-height: 47px;
     letter-spacing: 0.02em;
     color: var(--color-title);
+    transition: color var(--animation-webstudio);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--secondary-link-color);
   }
   &__contacts {
     margin-top: auto;
@@ -102,15 +116,29 @@
     line-height: 28px;
     letter-spacing: 0.02em;
     color: #757575;
+    transition: color var(--animation-webstudio);
+    &:hover,
+    &:focus {
+      color: var(--secondary-link-color);
+    }
+    @media screen and (max-width: 479px) {
+      font-size: 20px;
+    }
   }
   &__contacts-link--color {
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
     color: var(--secondary-link-color);
+    @media screen and (max-width: 479px) {
+      font-size: 24px;
+    }
   }
   &__social {
     display: flex;
+    @media screen and (max-width: 479px) {
+      flex-wrap: wrap;
+    }
   }
   &__social-link {
     font-size: 18px;

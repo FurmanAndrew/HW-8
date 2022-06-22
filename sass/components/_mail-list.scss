@@ -54,13 +54,18 @@
   &--background {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--basic-link-color);
     background-color: var(--footer-text);
   }
-  @include version(tablet-only) {
-    padding: 0;
+  &--top {
+    padding-top: 18px;
+  }
+  &--bottom {
+    padding-bottom: 18px;
+  }
+  @include version(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   &:hover,
   &:focus {

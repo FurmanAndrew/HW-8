@@ -105,20 +105,22 @@
 .project-list__animation {
   position: absolute;
   display: flex;
-  width: 322px;
-  height: 168px;
+  height: 100%;
+  width: 100%;
   justify-content: flex-start;
   top: 50%;
   left: 0;
   margin: 0;
-  margin-left: 24px;
-  display: inherit;
+  padding: 24px;
   transform: translateY(200%);
   transition: transform var(--animation-webstudio);
   font-size: 18px;
   line-height: 1.56;
   text-align: start;
   color: #ffffff;
+  @media screen and (max-width: 479px) {
+    overflow-y: scroll;
+  }
   .project-list__link:hover &,
   .project-list__link:focus & {
     transform: translateY(-50%);
